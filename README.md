@@ -2,8 +2,7 @@
 
 ```Hämeen ammattikorkeakoulun neljän oppilaan ohjelmistoprojekti. Projekti hyödyntää SCRUM ketterän ohjelmistokehityksen viitekehystä```
 
-Daily scrum päivittäin klo 20:00
-//Come hell or high water
+```Daily Scrum muistiinpanot```
 
 29.01 Daily scrum.  aikalla: Jesse, Aarne, Joni & Joonas. Pohdittu Daily scrumin harventamista päivittäisestä muutamaan kertaan viikossa. Mietitty mahdollista valikkorakenteen toteuttamista nuoli näppäimillä. 
 
