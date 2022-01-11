@@ -1,0 +1,222 @@
+Sprint 01 katselmointi. 10.02.2021
+
+Tuoteomistaja selittää mikä on valmista ja mikä ei ole valmista.
+-Valmista: Perus valikkorakenne valmista. Ominaisuutena valmista on asiakkaan lisäys sekä tallennus asiakastietokantaan.
+-Ei Valmista: Tietokannasta asiakastietojen lukeminen toimii, mutta listan alustus ei ollut julkaisukelpoinen.
+
+Kehitystiimi keskustelee, mikä toteutuksessa meni hyvin, mitä ongelmia se kohtasi ja kuinka ongelmat ratkaistiin.
+-Kehitystiimi puhalsi yhteen hiileen ja sai ohjelman perusrakenteen, päävalikon sekä asiakastietojen tallentamisen suunniteltua ja toteutettua. Suurimmat ongelmat tulivat
+tietokantarakenteen toteuttamisessa ja parhaan vaihtoehdon löytämisestä. Lukuisien kokeilujen jälkeen päädyimme JSON tallennusmuotoon, sekä tallennuksen toteuttamista ohjelman loppussa.
+Ongelmaksi muodostui tallennustiedostona toimineen varasto.json tiedoston jakaminen etätietovaraston kautta. Jotta tiedostoon tallentamista pystyi kokeilemaan, tuli ohjelmassa käydä muuttamassa
+tallennuspolku kunkin tiimijäsenen repositoryn mukaiseksi (C:\Users\Jesse...). Ratkaisuksi löytyi tapa kirjoittaa ohjelmaan tiedostopolku "kaksi kansiota taaksepäin" (..\..\varasto.json). 
+Kuitenkin tietokannan tallennustiedoston vetäminen etätietokannasta aiheutti ongelmia ja jouduimme poistamaan varasto.json tiedoston henkilökohtaisesta repositorysta ennen muutosten vetämistä 
+etätietokannasta. 
+
+Kehitystiimi esittelee “valmiin” työn ja vastaa inkrementtiin liittyviin kysymyksiin.
+-Maailman pandemia tilanteesta johtuen asiakas ei päässyt paikalle. Kysymyksiä ei herännyt inkrementtiin liittyen. 
+
+Tuoteomistaja kertoo tuotteen kehitysjonon tilanteen ja arvioi todennäköistä valmistumisajankohtaa perustuen tähänastiseen edistymiseen
+-Työn suunnittelussa ei pystytty täysin arvioimaan työn suunnitteluun sekä toteutukseen kuluvaa aikaa. Toivottu tuotteen valmiin tuotteet julkaisu noin kuukausi sprintin 01 päättymisestä.
+
+Koko ryhmä pohtii, mitä voidaan ja kannattaa tehdä seuraavaksi, jotta sprintin katselmointi antaa hyvän pohjan seuraaville sprintin suunnittelupalavereille
+-Tiekannasta asiakastietojen luku ja missä vaiheessa tiedot tulee lukea tietokannasta.
+-Asiakkaan lisäys sekä muokkaus ominaisuus tulee olla valmiina, jotta pystytään suunnitella laskutoimitukset sekä halutut tulostukset.
+
+Tarkistetaan, kuinka markkinatilanne tai tuotteen mahdolliset käyttötavat ovat vaikuttaneet siihen mikä olisi arvokkainta toteuttaa seuraavaksi, ja
+Tarkistetaan tuotteen julkaisun aikataulu, budjetti, markkinatilanne ja potentiaaliset toiminnallisuudet.
+-Maailman markkinatalouden epävarmuus heijastaa myös tuotteen kehitykseen. Potentiaalisten asiakkaiden sitoutuminen 12kuukauden mittaisiin sopimuksiin on epävarmaa. 
+Käyttäjällä kuitenkin vahva usko tuotteeseen. Budjetissa sekä annetuista aikatauluista pyritään pitämään kiinni.
+
+Katselmoinnin aikana tarkasteltu tuotteen kehitysjonoa, tässä vaiheessa ei ole huomattu mitään puutteita, eikä lisättävää ohjalman kehitysjonon kannalta.
+
+Sprintin 01 katselmointiin osallistuivat kaikki kehitystiimin jäsenet.
+
+
+
+Retrospektiivi 10.02.2021
+
+Sprintin retrospektiivin tarkoituksena on:
+• Tarkastella, kuinka edellinen sprintti sujui liittyen ihmisiin, yhteistyöhön, prosessiin ja työkaluihin
+Tiimin yhteishenki ja yhdessä tekeminen sujui kaikkien osalta mallikkaasti. Tehtiin päätös, että yhdessätekeminen on helpompaa, kuin tehtävien jakaminen erikseen kaikille kehitystiiminjäsenille
+tietotaidon ollessa vielä melko vähäistä. Sprinttiin 02 lähdetään samalla ajatuksella, tehdä yhdessä ryhmänä ohjelmistoa. 
+
+• Tunnistaa asiat, jotka sujuivat hyvin sekä määritellä tärkeimmät parannukset
+Kehitystiimin synergiat kohtasivat ja yhdessätekminen sujui hyvin. Parannuksiin voisi mainita ajan priorisoinnin sekä pyrkimyksen säännölliseen rytmiin kehitysprojektia tehtäessä.
+
+• Luoda suunnitelma Scrum-tiimin työskentelytapojen parantamiseksi.
+Yleisesti tiedon karttuessa mahdollisuuksien mukaan tehtävien jakamisen tiimin
+
+Scrum Master taputtaa kehitystiiminjäseniä olkapäälle ja kehottaa jatkamaan hyvää työtä.
+
+Retrospektiivissä paikalla kaikki kehitystiimin jäsenet.
+
+
+
+
+
+
+======================================================================================================================================================================
+
+Sprint 02 katselmointi. 17.02.2021
+Tuoteomistaja selittää mikä on valmista ja mikä ei ole valmista. - 
+-Valmista: Asiakastietokannan ja palvelutasojen hallinointi(lisäys/muokkaus/poisto) valmista. Palvelutasojen sekä asiakstietojen tallennus toimii odotetusti. 
+-Ei Valmista:Kaikkia käyttäjätietoja ei pysty vielä syöttämään, osa puuttuu mm liittymistpäivä/kokeilujakso.
+
+
+
+Kehitystiimi keskustelee, mikä toteutuksessa meni hyvin, mitä ongelmia se kohtasi ja kuinka ongelmat ratkaistiin
+-Toteutuksessa onnistuttiin, saatiin kaikki sprintin tavoitteet täytettyä onnistuneesti. Ongelmia esiintyi Git branchin kanssa Development haarassa kun kehitystiimin jäsen onnistui
+"Development" haaran tyäntämään etätievarasto nimellä "development", ongelma onnistuttiin ratkaisemaan mergeämällä branchit yhdeksi sekä poistamaan paikallisesti että etätietovarastosta
+"development" haara. Koodi on vielä sekavaa, sekä vaatii siistimistä. 
+
+Kehitystiimi esittelee “valmiin” työn ja vastaa inkrementtiin liittyviin kysymyksiin
+-Ohjelman menu rakenne jossa vaihtoehtoja lisätätä/muokata/poistaa asiakkaita sekä palvelutasoja. Palvelutasoista on tehty oma luokka, jonka kautta pystymme hallinoimaan palvelutason sisältöä. 
+Tiedot tallennetaan ohjelman suljettua JSON tiedostoon. Tietokannasta(Json tiedostosta) ohjelma hakee tallennetut tiedot ohjelman käynnistyksessä. 
+
+Tuoteomistaja kertoo tuotteen kehitysjonon tilanteen ja arvioi todennäköistä valmistumisajankohtaa perustuen tähänastiseen edistymiseen
+-Tuotteen kehitysjonon tehtävistä on puolet täytettyinä. Arvoi lopullisen tuotteen valmistusajasta, arvioitu valmistuminen 3viikon päästä 10.03.2021.
+
+Koko ryhmä pohtii, mitä voidaan ja kannattaa tehdä seuraavaksi, jotta sprintin katselmointi antaa hyvän pohjan seuraaville sprintin suunnittelupalavereille
+-Lisätään puuttuvat asiakastietojen syötteet(liittymispäivä/kokeilujakso).
+-Käyttöliittymän puhdistus, Käytettäisiin samantyylistä switchcase rakennetta kuin main menussa.
+-laskutus raportointi kuukausittaiseksi.
+-Käyttäjälle mahdollisuus tarkastella tulevia maksuja seuraavilta kuukausilta.
+
+Tarkistetaan, kuinka markkinatilanne tai tuotteen mahdolliset käyttötavat ovat vaikuttaneet
+siihen mikä olisi arvokkainta toteuttaa seuraavaksi, ja
+Tarkistetaan tuotteen julkaisun aikataulu, budjetti, markkinatilanne ja potentiaaliset
+toiminnallisuudet
+-Markkinatilanne sekä budjetti ei ole muuttuneet lähtötilanteesta. Tuotteen julkaisu aikataulu pitää, tuote julkaistaan 10.03.2021. Potentiaaliset toiminnalisuudet, Asiakkaiden lisäys onnistuu jo,
+mikäli käyttäjä haluaa ottaa tuotteen käyttöön, on hänen mahdollista alkaa tallentamaan tietokantaan asiakkaidensa tietoja. 
+
+Katselmoinnin aikana tarkasteltu tuotteen kehitysjonoa, tässä vaiheessa ei ole huomattu mitään puutteita, eikä lisättävää ohjalman kehitysjonon kannalta. 
+
+Sprintin 02 katselmointiin osallistuivat kaikki kehitystiimin jäsenet.
+
+
+
+Retrospektiivi 17.02.2021
+
+Sprintin retrospektiivin tarkoituksena on:
+• Tarkastella, kuinka edellinen sprintti sujui liittyen ihmisiin, yhteistyöhön, prosessiin ja työkaluihin
+Yhteistyö ihmisten sekä tiimin kesken sujui moitteetta. Scrum Master ohjeisti työn saloihin. Työt koordinoitiin hyvin ja hyvässä yhteishengessä, kaikki tavoitteet saatiin ajallaan valmiiksi.
+Prosessi toimi kevyesti opittuna ensimmäisestä sprintistä. Työkaluina mainintana Discord, jota käytimme kommunikointiin, ruudunjakamiseen ja työskentelyyn koodin parissa. 
+
+• Tunnistaa asiat, jotka sujuivat hyvin sekä määritellä tärkeimmät parannukset
+Tällähetkellä emme keksi parannettavaa, työskenely sujui moitteetta sekä kaikki sprintille annetut tavoitteet täyttyivät.
+
+• Luoda suunnitelma Scrum-tiimin työskentelytapojen parantamiseksi.
+Ihanteellisessa tilanteessa olisi ennaltamäärätyt päivät sekä työtunnit, joina työstettäisiin tehokkaasti ohjelmaa. Kaikilla kehitystiimin jäsenillä erilaiset elämäntilanteet sekä aikataulut
+joten aikataulujen yhteensovitus välillä haastavaa.
+
+Scrum Master kehottaa tiimijäseniä myös huolehtimaan itsestään ja huilaamaan välillä. Scrum Master kiittää kaikkia tiiminjäseniä työpanoksesta sekä yöunien uhraamisesta projektin hyväksi.
+
+Parantamistarpeita ei tällähetkellä ole työtavoissa tai tavoitteissa, mikäli parannettavaa löytyy, asia otetaan välittömästi puheeksi tiimin kesken.
+
+Retrospektiivissä paikalla kaikki kehitystiimin jäsenet.
+
+
+
+======================================================================================================================================================================
+
+
+
+Sprint 03 katselmointi. 24.02.2021
+
+Tuoteomistaja selittää mikä on valmista ja mikä ei ole valmista. - 
+-Valmista: Laskutuksen tulostus pystytään suorittamaan 30päivän välein. Ohjelma huomioi 30päivän maksuttoman kokeilujakson. Käyttäjä pystyy tulostamaan listan tulevista maksuista seuraavalta kuukaudelta, pieni bugi jää vielä korjattavaksi. Lisäksi valmistui 6kk sekä 12kk "kerta-osto", jota ei oltu suunniteltu tehtäväksi 003 sprintissä. Koodia selkeytetty ja siivottu. 
+-Ei valmista: Käyttäjän kanssa keskusteltu, ettei asiakkaiden laskutustietoja välttämättä tarvitse lisätä, sovittiin silti siirrettäväkis seuraavaan sprinttiin, ohjelman valmistumisen puolesta ominaisuudella ei ole painoarvoa. Tavoitteena oli saada koodi selkeämmäksi, tätä suoritettiin, mutta kaikilta osin ei päästy aivan haluttuun lopputulokseen. Aikataulun puitteissa ohjelmaa ei välttämättä saada siistittyä kaikilta osin.
+
+Kehitystiimi keskustelee, mikä toteutuksessa meni hyvin, mitä ongelmia se kohtasi ja kuinka ongelmat ratkaistiin
+- Huomasimme että asiakaslistat luokkaan tehty palvelutasolistat, joka tulisi olla samassa luokassa muiden tietueiden kanssa. Tästä johtuen saimme luokkien välillä konfliktin.
+Ongelma ratkaistiin tekemällä metodista staattinen funktio jota ajetaan pääohjelmasta jolla saatiin ohitettua konflikti.
+- Toteutuksessa saatiin lähes kaikki ominaisuudet, joita sprintin aikana oli tarkoitus valmistaa.
+ 
+Kehitystiimi esittelee “valmiin” työn ja vastaa inkrementtiin liittyviin kysymyksiin
+Kolmenkymmenen päivän kokeilujakso huomioidaan laskutuksen tulostuksissa. Käyttäjä pystyy tulostamaan laskutuksen kuukausittain 30 päivän välein. Raportointi tulostus lisätty valikkorakenteeseen.
+Kysymyksiä heräsi keskeneräisen ominaisuuden bugi-fiksauksesta, todettu kuitenkin bugin olevan ratkaistavissa seuraavan sprintin alkaessa(pieni logiikka virhe, jota ei ehditty korjaamaan aikataulujen puitteissa). 
+
+Tuoteomistaja kertoo tuotteen kehitysjonon tilanteen ja arvioi todennäköistä valmistumisajankohtaa perustuen tähänastiseen edistymiseen
+-Sprintin 003 ajalle asetetut kehitysjonon tehtävät täyttyivät, pieniä korjaustoimenpiteitä joudutaan suorittamaan seuraavan sprintin alkaessa. Aikataulu pitää edelleen, arvioitu valmistuminen 10.03.2021.
+
+Koko ryhmä pohtii, mitä voidaan ja kannattaa tehdä seuraavaksi, jotta sprintin katselmointi antaa hyvän pohjan seuraaville sprintin suunnittelupalavereille
+-Ohjelman bugien korjaukset suoritettava ensisijaisesti
+-Puuttuvat lisäominaisuudet tullaan liittämään ohjelmaan 004 sprintin aikana.
+
+Tarkistetaan, kuinka markkinatilanne tai tuotteen mahdolliset käyttötavat ovat vaikuttaneet siihen mikä olisi arvokkainta toteuttaa seuraavaksi, ja
+Tarkistetaan tuotteen julkaisun aikataulu, budjetti, markkinatilanne ja potentiaaliset toiminnallisuudet
+-Sprintin aikana tilanne ei ole muuttunut viimekertaiseen katselmointiin nähden.
+
+Tilaaja toivoisi että saataisiin viimeisetkin ominaisuudet liitettyä, jotta tuote saataisiin kokonaisuudessaan käyttöön testiryhmälle. 
+
+Sprintin 03 katselmointiin osallistuivat Joonas Karomäki, Jesse Strömberg.
+
+
+Retrospektiivi 24.02.2021
+
+Sprintin retrospektiivin tarkoituksena on:
+• Tarkastella, kuinka edellinen sprintti sujui liittyen ihmisiin, yhteistyöhön, prosessiin ja työkaluihin
+Ihmisiin ja yhteistyöhön liittyen ongelmaksi muodostui tiiminjäsenten työ- sekä siviilielämä, jonka johdosta yhteisten aikataulujen löytämisestä tuli hyvin haastavaa.
+Projektin kasvaessa suuremmaksi, huomattiin tiiminjäsenten osaamistasojen vaihtelevan paljonkin toisistaan. Tiiminjäsenillä kaikilla on omat tyylinsä tehdä asioita ja useasti huomasimme kyselevämmä selvitystä "missä mennään?". Hetkinä kun ohjelmointia suoritettiin yhdessä, huomattiin olevan vaikeaa pysyä mukana muutoksista/muuttujista joita itse ei ollut kirjoittanut. Todettu kuitenkin että yhdessä tekeminen parempi vaihtoehto, kuin että jaettaisiin työt eri osalueisiin tiiminjäsenten kesken. Näin ollen työstä jää selkeämpi kokonaiskuva. 
+
+• Tunnistaa asiat, jotka sujuivat hyvin sekä määritellä tärkeimmät parannukset
+Työnjako sujui kohtalaisen hyvin tiiminjäsenten kesken,  jokainen löytänyt oman paikkansa projektissa. Parannuksiin mainittakoon yhteisen ajan löytäminen koko tiimin kesken.
+
+• Luoda suunnitelma Scrum-tiimin työskentelytapojen parantamiseksi.
+Suora lainaus sprintin 02 työskentelytapojen parantamisesta pätee edelleen. "Ihanteellisessa tilanteessa olisi ennaltamäärätyt päivät sekä työtunnit, joina työstettäisiin tehokkaasti ohjelmaa. Kaikilla kehitystiimin jäsenillä erilaiset elämäntilanteet sekä aikataulut joten aikataulujen yhteensovitus välillä haastavaa."
+
+Scrum Master ottaa hatun päästään ja kiittää tiimiläisiä työpanoksesta tsempaten loppurutistukseen työn saattamisessa valmiiksi.
+
+Retrospektiivissä paikalla Jesse Strömberg, Joonas Karomäki.
+
+
+======================================================================================================================================================================
+
+Sprint 04 katselmointi. 03.03.2021
+
+Tuoteomistaja selittää mikä on valmista ja mikä ei ole valmista.  
+-Valmista: Ohjelmaan saatiin lisättyä uusi ominaisuus, jolla pystytään tarkistamaan tulevien kuukausien maksuerät.
+ohjelmaan lisätty ominaisuus, jolla asiakaan maksaessa useamman kuukauden kertasumman, pystytään tälle antamaan alennusta kertaostosta.
+-Ei valmista. Päädyttiin Scrum-tiimin kanssa yhteistuumin, että asiakkaiden laskutustietojen lisääminen ei ole tarpeen. -Jatkokehityksessä voidaan huomoida. 
+Ohjelman koodia ei aikataulun puitteissa saatu refaktoroitua.
+
+Kehitystiimi keskustelee, mikä toteutuksessa meni hyvin, mitä ongelmia se kohtasi ja kuinka ongelmat ratkaistiin
+-Sprintin toteutuksessa ei suurempia ongelmia ohjelman kanssa. Todettu tiiminkanssa tuotantokoodin olevan valmiina.
+- Toteutuksessa saatiin ominaisuudet lisättyä lukuunottamatta asiakkaan laskutustietojen lisäämistä joka sovittiin jätettävän pois tuotteesta.
+ 
+Kehitystiimi esittelee “valmiin” työn ja vastaa inkrementtiin liittyviin kysymyksiin
+Tuoteomistaja kysyy onko ohjelma valmis testi käyttöön. Ohjelma on valmis testikäyttöön.
+
+Tuoteomistaja kertoo tuotteen kehitysjonon tilanteen ja arvioi todennäköistä valmistumisajankohtaa perustuen tähänastiseen edistymiseen
+-Tuote on valmistunut etuajassa testikäyttöön.
+
+Koko ryhmä pohtii, mitä voidaan ja kannattaa tehdä seuraavaksi, jotta sprintin katselmointi antaa hyvän pohjan seuraaville sprintin suunnittelupalavereille
+-Tuote on valmiina testikäyttöön, jonka johdosta seuraavalle sprintille ei enää tarvetta.
+
+Tarkistetaan, kuinka markkinatilanne tai tuotteen mahdolliset käyttötavat ovat vaikuttaneet siihen mikä olisi arvokkainta toteuttaa seuraavaksi, ja
+Tarkistetaan tuotteen julkaisun aikataulu, budjetti, markkinatilanne ja potentiaaliset toiminnallisuudet
+-Sprintin aikana tilanne ei ole muuttunut viimekertaiseen katselmointiin nähden.
+ 
+
+Sprintin 03 katselmointiin osallistuivat Joonas Karomäki, Jesse Strömberg, Joni Soukkio.
+
+
+
+Retrospektiivi 03.03.2021
+
+Sprintin retrospektiivin tarkoituksena on:
+• Tarkastella, kuinka edellinen sprintti sujui liittyen ihmisiin, yhteistyöhön, prosessiin ja työkaluihin
+Projektin alkumetreiltä asti huomasimme, että kehitystiiminjäsenten välisten aikataulujen yhtensovittaminen tulee olemaan haastavaa. Näin olikin koko prosessin ajan.
+Parhaamme mukaan pyrimme pitämään yhteisiä kehityshetkiä. Tiimin yhteistyö oli kuitenkin timanttista.
+
+• Tunnistaa asiat, jotka sujuivat hyvin sekä määritellä tärkeimmät parannukset
+Työnjako sujui hyvin tiiminjäsenten kesken,  jokainen löytänyt oman paikkansa projektissa. Parannuksiin mainittakoon yhteisen ajan löytäminen koko tiimin kesken sel'
+Tuotteen kehitysjonosta asiakastarinoita tuotaessa sprintin kehitysjonoon olisi hyvä olla entistä tarkempi käyttötapakuvauksista, jotta selkokiellellä pystytään tarkastamaan
+mitä tuotteelta halutaan seuraavassa vaiheessa.
+
+• Luoda suunnitelma Scrum-tiimin työskentelytapojen parantamiseksi.
+Suora lainaus sprintin 02 työskentelytapojen parantamisesta pätee edelleen. "Ihanteellisessa tilanteessa olisi ennaltamäärätyt päivät sekä työtunnit, joina työstettäisiin tehokkaasti ohjelmaa. Kaikilla kehitystiimin jäsenillä erilaiset elämäntilanteet sekä aikataulut joten aikataulujen yhteensovitus välillä haastavaa."
+
+Scrum Master on kiitollinen koko tiimin panostuksesta. Viimeinen rutistus vielä laadukkaaseem raportoinnin loppuunsaattamiseen!
+
+Retrospektiivissä paikalla Jesse Strömberg, Joonas Karomäki, Joni Soukkio.
