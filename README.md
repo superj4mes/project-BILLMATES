@@ -1,5 +1,7 @@
 # project-BILLMATES
 
+```Hämeen ammattikorkeakoulun neljän oppilaan ohjelmistoprojekti. Projekti hyödyntää SCRUM ketterän ohjelmistokehityksen viitekehystä```
+
 Daily scrum päivittäin klo 20:00
 //Come hell or high water
 
